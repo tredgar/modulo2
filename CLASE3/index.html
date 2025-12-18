@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERENCIA-ESPECIFICIDAD</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .interno {
+            background-color: yellow;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>Herencia</h2>
+    <div class="padre">
+        <div>
+            <div>
+                <p>Este texto recibe el estilo de su padre</p>
+                <p class="hijo-especial">Este elemento hermano, con una clase especifica</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>Especificidad</h2>
+    <p class="ultima">Este texto es del color de la ultima regla aplicada</p>
+
+    <h3>ID > CLASE >ELEMENTO</h3>
+    <section id="element-id" class="element-class">Elemento por ID</section>
+    <section class="element-class">Elemento pot clase</section>
+    <section>Elemento por nombre de etiqueta</section>
+
+    <h3>En linea > interno > externo >navegador</h3>
+    <p style="background-color: cyan;" class="interno externo">Este texto tiene estilo en línea</p>
+    <p class="interno externo">Externo</p>
+    <p>Navegador</p>
+    <h3>Important</h3>
+    <p style="background-color: darkmagenta;" class="not-important">La regla que contiene Important</p>
+</body>
+</html>

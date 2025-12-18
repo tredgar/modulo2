@@ -1,0 +1,39 @@
+* {
+    font-family: 'Henny Penny', cursive,arial;
+}
+
+.padre{
+    color:aqua; 
+    font-weight: bold;
+
+    
+}
+.hijo-especial {
+    color: red;
+}
+.ultima{
+    color:red;
+}
+.ultima{
+    color:blue ;
+}
+
+#element-id{
+    background-color: coral;
+}
+.element-class{
+    background-color: darkturquoise;
+}
+section{
+    background-color: forestgreen;
+}
+.cascada {
+    background-color: rgb(55, 0, 255);
+}
+#not-important {
+    background-color: darkgray ;
+}
+
+.not-important {
+    background-color: lightgreen;
+}
