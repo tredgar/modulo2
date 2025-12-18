@@ -1,0 +1,66 @@
+*{
+    font-family: "Chelsea Market", system-ui;
+        font-weight: 400;
+        font-style: normal;
+   margin: 0;
+   padding: 0;  
+    box-sizing: border-box;
+}
+.henny-penny-regular {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+header > nav ul> li >a{
+   color: #ce9000;
+} 
+
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+.button.primary{
+    color: #fff;
+    background-color: #ce9000;
+}
+.section {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 20px 0;
+}
+.section.one{
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.section.two{
+    background-color: #ffffff;
+}
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}   
+.section-title {
+    font-family: 'Henny Penny', cursive, arial;
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+
