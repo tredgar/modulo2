@@ -14,28 +14,38 @@
 
 header {
     width: 100%;
-    background-color: rgba(0, 0, 0, 50%);
+    background-color: rgba(0, 0, 0, 0.792);
     color: white;
     padding: 15px;
     position: fixed;
     top: 0px;
     z-index: 1000;
     display: flex;
-     justify-content: space-between;
+    justify-content: space-between;
+    
 }
-.main-nav{
-   display: inline-block;
-    align-items: center;
+.main-nav,.secondary-nav{
+    display: inline-block; 
 }
 .menu-1{
     display: flex;
     list-style: none;
     height: 100%;
+    align-items: center;
+    align-content: center;
 }
+.menu-2{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+}
+
 
 header > nav > .menu-1 > li >a{
   
-   color: #ce9000;
+   color: #ffffff;
    padding: 10px;
    text-decoration: none;
 font-size: 20px;
@@ -97,21 +107,49 @@ main {
     border: none;
     border-radius: 15px;
 }
-.button.primary{
+.button-md{
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+.button-outline{
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+  
+    border-radius: 15px;
+    margin-left: 10px;
+}
+.primary{
     color: #fff;
     background-color: #ce9000;
     margin-top: 10px;
 }
-.button.secondary{
+.secondary{
     color: #ffffff;
     background-color: transparent;
     margin-top: 10px;
     border: 1px solid #ce9000;
 
 }
-.section {
+.section-banner {
     width: 100%;
     height: auto;
+
+}
+.section-xl {
+    width: 100%;
+    height: 920px;
     padding: 10px;
 
 }
@@ -121,11 +159,11 @@ main {
     margin-bottom: 15px;
     color: #333333;
 }
-.section.one{
+.section-xl.one{
     background-color: #f1f1f1;
     text-align: center;
 }
-.section.two{
+.section-xl.two{
     background-color: #ffffff;
 }
 .footer {
