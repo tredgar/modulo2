@@ -6,6 +6,11 @@
     padding: 0;  
     box-sizing: border-box;
 }
+.henny-penny-regular {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
 .color-gold{
     color: #ce9000;
 }
@@ -18,10 +23,11 @@
 .bg-black-7{
     background-color: rgba(0, 0, 0, 0.7);
 }
-.henny-penny-regular {
-    font-family: "Henny Penny", system-ui;
-    font-weight: 400;
-    font-style: normal;
+.parallax{
+    background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 header {
@@ -111,7 +117,7 @@ flex: 1;
     position: absolute;
     width: 100%;
     height: 250px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(22, 20, 20, 0.5);
     left: 0%;
     bottom: 0%;
    color: white;
@@ -213,15 +219,16 @@ flex: 1;
     font-family: 'Henny Penny', cursive, arial;
     font-size: 2em;
     margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
 
 }
-.section-title  h2 {
-     font-size: 2.5rem;
-     font-weight: bold;
-     letter-spacing: 2px;
-     text-transform: uppercase;
-     text-align: center;
-     padding-bottom: 20px;
+.section-title h2 {
+    font-size: 3rem;
+    color: #d4af37;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 .bg-white{
     background-color: #e7e7e7;
@@ -258,12 +265,12 @@ flex: 1;
 form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+   
     max-width: 400px;
 }
 .form-input {
     display: block;
-    width: 100%;
+   
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ce9000;
@@ -325,35 +332,7 @@ label {
     line-height: 1.6;
     margin-bottom: 15px;
 }
-@media (max-width: 768px) {
-    .section-xl {
-        padding: 60px 20px;
-    }
 
-    .section-title h2 {
-        font-size: 2.2rem;
-    }
-
-    .servicios-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .servicio-imagen {
-        height: 180px;
-        font-size: 80px;
-    }
-
-    .servicio-contenido {
-        padding: 25px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .servicios-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
 .servicio-precio {
     color: #d4af37;
@@ -364,23 +343,19 @@ label {
 }
 
 
-
 #galeria {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
+    flex-direction: column;
+    width: 100%;
 }
-
 .gallery-item {
     min-width: 250px;
     background-color: #c4c4c4;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
     margin: 10px;
     
 }
@@ -411,6 +386,53 @@ label {
    padding: 50px;
    box-shadow: 0 0 50px #ce9000;
 }
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery-item {
+    flex: 0 1 calc(33.333% - 20px);
+    min-width: 250px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 48px rgba(212, 175, 55, 0.35);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+    color: #0f0f0f;
+    font-size: 1.1rem;
+    border-top: 3px solid #d4af37;
+}
+
 
 
 

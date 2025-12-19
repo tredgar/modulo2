@@ -120,7 +120,7 @@
             </div>
         </div>
     </section>
-      <section class="section-sm bg-black bg-img-2">
+      <section class="section-sm bg-black bg-img-2 parallax">
         <div id="nosotros" class="bg-black-7">
           <div class="section-title">
             <h2>Nosotros</h2>
@@ -135,38 +135,28 @@
           </p>
         </div>
       </section>
-      <section class="section-xl bg-white">
+     <section class="section-xl">
         <div id="galeria">
-          <div class="section-title">
-            <h2>Galeria</h2>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="media/img/barber1.jpg"
-              alt="Corte de cabello moderno"
-              width="30%"
-            />
-            <p>Diseño de barba</p>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="media/img/barber2.jpg"
-              alt="Afeitado tradicional"
-              width="30%"
-            />
-            <p>Afeitado tradicional</p>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="media/img/barber3.jpeg"
-              alt="Arreglo de barba"
-              width="30%"
-            />
-           <p>Corte de barba</p>
-          </div>
+            <div class="section-title">
+                <h2>Galería</h2>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="media/img/barber1.jpg" alt="Corte de cabello moderno" />
+                    <p>Diseño de barba</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="media/img/barber2.jpg" alt="Afeitado tradicional" />
+                    <p>Afeitado tradicional</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="media/img/barber3.jpeg" alt="Arreglo de barba" />
+                    <p>Corte de barba</p>
+                </div>
+            </div>
         </div>
-      </section>
-      <section class="section-md bg-black">
+    </section>
+      <section class="section-xl bg-black">
         <div class="container-contact">
           <div class="section-title">
           <h2>Contacto</h2>
@@ -176,6 +166,8 @@
           <form action="https://sheetdb.io/api/v1/6bk73m9bayfl1" method="post">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre" class="form-input" />
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" id="correo" class="form-input" />
             <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" id="mensaje" class="form-input"></textarea>
             <br /><br /><br />
